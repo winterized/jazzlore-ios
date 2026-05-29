@@ -1,0 +1,12 @@
+Jazzlore Metronome
+
+A focused, reliable metronome built for jazz practice.
+Most metronomes are designed for classical practice — strict downbeats, even subdivisions, a click on every beat. Jazz asks for something different. Jazzlore Metronome is built for the way jazz musicians actually train:
+- Click on 2 and 4 — the foundation of jazz time-feel. Internalize the offbeat pulse the way the rhythm section does, instead of leaning on a downbeat crutch.
+- Skip-measure practice — click for one measure, silent for the next. Then two-on, two-off. Then four-on, four-off. It's how you build a bulletproof internal clock that doesn't collapse the moment the metronome drops out.
+- Tap tempo for when you know the feel before you know the BPM.
+- Clean, distraction-free interface — large legible tempo, full-screen, dark by default. Made to sit on top of the piano without competing for attention.
+
+No accounts, no ads, no tracking, no analytics. The app does one thing and gets out of the way. Works offline — open the app, set the tempo, practice.
+
+Part of the Jazzlore family of jazz reference apps. Free, open source, ad-free, made for musicians.
