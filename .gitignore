@@ -1,0 +1,57 @@
+# ── Tooling state (oh-my-claudecode, editor caches) ──────────────────────────
+.omc/
+
+# ── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# ── Node / package managers ──────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# Apple signing material — NEVER commit. (Team ID is fine; private keys/certs are not.)
+*.p12
+*.cer
+*.p8
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+
+# ── Capacitor: generated web assets (copied from the jazzlore web repo) ──────
+# Each app's www/ is produced by `make <app>` (PWA dist) — regenerated, not source.
+*/www/
+# Capacitor copies www/ into the iOS target at sync time — also regenerated.
+*/ios/App/App/public/
+
+# ── Xcode ────────────────────────────────────────────────────────────────────
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.ipa
+*.app
+*.dSYM.zip
+*.dSYM
+
+# ── Swift Package Manager (Capacitor 8 default) ──────────────────────────────
+.build/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/xcode/xcuserdata/
+# Package.resolved is kept (pins dependency versions for reproducible builds).
+
+# ── CocoaPods (not used today; defensive for any future app) ─────────────────
+# Pods/ is regenerated from the Podfile; Podfile.lock is kept (pins versions).
+*/ios/App/Pods/
