@@ -26,7 +26,7 @@ output, DerivedData) are ignored.
 | ------------ | ------------------------- | ---------------- | --------------------- | ------- |
 | `metronome/` | `com.jazzlore.metronome`  | Jazz Metronome   | Jazzlore Metronome    | shipped |
 | `chords/`    | `com.jazzlore.chords`     | Jazz Chords      | Jazzlore Chords       | built   |
-| `scales/`    | `com.jazzlore.scales`     | Jazz Scales      | Jazzlore Scales       | planned |
+| `scales/`    | `com.jazzlore.scales`     | Jazz Scales      | Jazzlore Scales       | built   |
 
 ## Building an app
 
@@ -38,12 +38,13 @@ The web source lives in a **separate** repo. Point `JAZZLORE_WEB` at a local che
 # Build a PWA, copy its dist into the Capacitor project, and sync iOS:
 make metronome
 make chords
+make scales
 
 # Custom path to the web repo:
-make chords JAZZLORE_WEB=/path/to/jazzlore
+make scales JAZZLORE_WEB=/path/to/jazzlore
 
 # Then open in Xcode and ▶ Build & Run:
-cd chords && npx cap open ios
+cd scales && npx cap open ios
 ```
 
 `make <app>` runs `pnpm -F @jazzlore/<app> build` in the web repo, copies the resulting
@@ -51,6 +52,6 @@ cd chords && npx cap open ios
 
 ## Status
 
-**metronome** (shipped) proved the Capacitor pattern; **chords** is bootstrapped to the same
-pattern, **scales** is next. Private for now; will be open-sourced (MIT) once all three are
-settled.
+All three apps are bootstrapped to the same Capacitor pattern: **metronome** (the pilot,
+shipped), **chords**, and **scales**. Private for now; will be open-sourced (MIT) once the
+App Store submissions are settled.

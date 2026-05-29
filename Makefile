@@ -7,7 +7,7 @@
 # Path to a local checkout of the web monorepo (github.com/winterized/jazzlore).
 JAZZLORE_WEB ?= $(HOME)/Documents/jazzlore
 
-.PHONY: metronome chords
+.PHONY: metronome chords scales
 
 ## metronome: build the Metronome PWA and sync it into the Capacitor iOS project
 metronome:
@@ -32,3 +32,15 @@ chords:
 	@echo "==> cap sync ios"
 	cd chords && npx cap sync ios
 	@echo "==> Done. Open in Xcode with:  cd chords && npx cap open ios"
+
+## scales: build the Scales PWA and sync it into the Capacitor iOS project
+scales:
+	@echo "==> Building @jazzlore/scales from $(JAZZLORE_WEB)"
+	pnpm -C "$(JAZZLORE_WEB)" -F @jazzlore/scales build
+	@echo "==> Copying dist/ -> scales/www/"
+	rm -rf scales/www
+	mkdir -p scales/www
+	cp -R "$(JAZZLORE_WEB)/apps/scales/dist/." scales/www/
+	@echo "==> cap sync ios"
+	cd scales && npx cap sync ios
+	@echo "==> Done. Open in Xcode with:  cd scales && npx cap open ios"
