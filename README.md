@@ -18,14 +18,15 @@ Each app here is a **thin Capacitor shell** around an existing PWA:
 
 ## Monorepo layout
 
-```
-metronome/   ← Capacitor project (pilot — the one that's built)
-chords/      ← (planned)
-scales/      ← (planned)
-```
+Each app is its own Capacitor project (Capacitor 8, SPM, iOS 16 deployment target). The
+native `ios/` directory is committed and editable; generated artifacts (`www/`, build
+output, DerivedData) are ignored.
 
-Each app is its own Capacitor project (`com.jazzlore.<app>`). The native `ios/` directory is
-committed and editable; generated artifacts (`www/`, build output, DerivedData) are ignored.
+| Dir          | Bundle ID                 | Home-screen name | App Store name        | Status  |
+| ------------ | ------------------------- | ---------------- | --------------------- | ------- |
+| `metronome/` | `com.jazzlore.metronome`  | Jazz Metronome   | Jazzlore Metronome    | shipped |
+| `chords/`    | `com.jazzlore.chords`     | Jazz Chords      | Jazzlore Chords       | built   |
+| `scales/`    | `com.jazzlore.scales`     | Jazz Scales      | Jazzlore Scales       | planned |
 
 ## Building an app
 
@@ -34,14 +35,15 @@ The web source lives in a **separate** repo. Point `JAZZLORE_WEB` at a local che
 `~/Documents/jazzlore`), then run the per-app make target:
 
 ```sh
-# Build the metronome PWA, copy its dist into the Capacitor project, and sync iOS:
+# Build a PWA, copy its dist into the Capacitor project, and sync iOS:
 make metronome
+make chords
 
 # Custom path to the web repo:
-make metronome JAZZLORE_WEB=/path/to/jazzlore
+make chords JAZZLORE_WEB=/path/to/jazzlore
 
 # Then open in Xcode and ▶ Build & Run:
-cd metronome && npx cap open ios
+cd chords && npx cap open ios
 ```
 
 `make <app>` runs `pnpm -F @jazzlore/<app> build` in the web repo, copies the resulting
@@ -49,5 +51,6 @@ cd metronome && npx cap open ios
 
 ## Status
 
-Pilot stage — **metronome** proves the Capacitor pattern before it's replicated to chords
-and scales. Private for now; will be open-sourced (MIT) once the pattern is settled.
+**metronome** (shipped) proved the Capacitor pattern; **chords** is bootstrapped to the same
+pattern, **scales** is next. Private for now; will be open-sourced (MIT) once all three are
+settled.
