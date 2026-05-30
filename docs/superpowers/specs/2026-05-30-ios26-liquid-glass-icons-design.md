@@ -126,11 +126,14 @@ implementation plan.
   file reference to the App target in the Xcode project.
 - The current flat `AppIcon.appiconset` **stays committed in git**. Rollback (especially
   Chords) = remove the `.icon` reference and revert one commit.
-- **Open verification item:** confirm whether the `AppIcon.appiconset` should be *retained*
-  as the App Store marketing / pre-iOS-26 fallback, or removed once `.icon` is adopted.
-  Resolve during implementation by checking `xcodebuild` / archive output and App Store
-  Connect requirements. Default assumption: retain the appiconset as fallback unless it
-  conflicts with the `.icon`.
+- **Default-behavior decision (resolved):** keep `AppIcon.appiconset` in place and simply
+  add `AppIcon.icon` alongside it, both named `AppIcon`. Per repeated Apple Developer Forum
+  reports (confirmed in Xcode 26 beta 3+ / RC), when both share the name and nothing else is
+  changed, **the `.icon` wins on every iOS version** — the system auto-generates flattened
+  fallback PNGs from the `.icon` for pre-iOS-26 devices. So iOS 18 devices get a
+  flattened-glass render of the `.icon`, not the original appiconset PNG. The appiconset
+  therefore remains in the bundle but is **not used for rendering** — it is retained purely
+  as the git-rollback artifact. This is Apple's intended default path; we adopt it as-is.
 
 ## Commits
 
@@ -145,7 +148,9 @@ implementation plan.
   accents/dot transparent), `#0a0a0a` / correct dot colors.
 - Each `AppIcon.icon` is a well-formed package (`icon.json` + `Assets/` present).
 - `xcodebuild` succeeds for all three apps with the `.icon` wired in.
-- Fallback behavior for App Store / pre-iOS-26 confirmed (open item above).
+- `AppIcon.icon` and `AppIcon.appiconset` coexist under the name `AppIcon` with the `.icon`
+  rendering everywhere (per the resolved default-behavior decision); appiconset retained
+  only for rollback.
 
 ### On-device (user)
 - Archive each app, install on iPhone, evaluate the three side-by-side: same intense black,
