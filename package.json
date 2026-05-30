@@ -5,9 +5,12 @@
   "type": "module",
   "description": "iOS-repo-only tooling (app-icon layer generation).",
   "scripts": {
-    "icons:layers": "node scripts/generate-icon-layers.mjs"
+    "icons:layers": "node scripts/generate-icon-layers.mjs",
+    "splash:masters": "node scripts/generate-splash-masters.mjs"
   },
   "devDependencies": {
-    "sharp": "^0.34.0"
+    "opentype.js": "^1.3.4",
+    "sharp": "^0.34.0",
+    "wawoff2": "^2.0.1"
   }
 }
