@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512">
+  <!-- Layer 1 / background. Canonical design: ~/Documents/jazzlore/assets/icons/scales/pwa-master.svg
+       Full opaque #0a0a0a square; iOS 26 applies the rounded-rect mask, so no corner radius here. -->
+  <rect width="512" height="512" fill="#0a0a0a"/>
+</svg>
