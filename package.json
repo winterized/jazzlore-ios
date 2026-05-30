@@ -1,0 +1,13 @@
+{
+  "name": "jazzlore-ios-tooling",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "iOS-repo-only tooling (app-icon layer generation).",
+  "scripts": {
+    "icons:layers": "node scripts/generate-icon-layers.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0"
+  }
+}
