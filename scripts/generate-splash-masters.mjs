@@ -124,7 +124,13 @@ async function main() {
   for (const app of APPS) {
     const iconPath = resolve(ROOT, `${app}/assets/icon-only.png`)
     const out = resolve(ROOT, `${app}/assets/splash-master.png`)
-    const icon = await sharp(iconPath).resize(ICON_PX, ICON_PX, { fit: 'fill' }).toBuffer()
+    // .flatten enforces the seamless-on-black invariant: any (future) icon
+    // alpha is composited onto BG so no tile edge shows. Today's icons are
+    // already opaque #0a0a0a, so this is a visual no-op.
+    const icon = await sharp(iconPath)
+      .resize(ICON_PX, ICON_PX, { fit: 'fill' })
+      .flatten({ background: BG })
+      .toBuffer()
     await sharp({ create: { width: MASTER, height: MASTER, channels: 4, background: BG } })
       .composite([
         { input: icon, top: ICON_TOP, left: ICON_LEFT },
@@ -135,6 +141,16 @@ async function main() {
     console.log(`  ${app}/assets/splash-master.png`)
   }
   console.log('Done. 3 splash masters written.')
+  console.log('')
+  console.log('NOTE: this writes masters only. The shipped launch images live in each app\'s')
+  console.log('Splash.imageset and are NOT updated here — regenerate them from the master, using')
+  console.log('an isolated assetPath so the frozen AppIcon is never touched:')
+  console.log('  for app in metronome chords scales; do \\')
+  console.log('    rm -rf $app/.splash-build && mkdir $app/.splash-build && \\')
+  console.log('    cp $app/assets/splash-master.png $app/.splash-build/splash.png && \\')
+  console.log('    (cd $app && npx capacitor-assets generate --ios --assetPath .splash-build \\')
+  console.log('       --splashBackgroundColor \'#0a0a0a\' --splashBackgroundColorDark \'#0a0a0a\') && \\')
+  console.log('    rm -rf $app/.splash-build; done')
 }
 
 await main()
