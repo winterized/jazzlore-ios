@@ -7,6 +7,11 @@
 .LSOverride
 Icon?
 
+# ── Editor / IDE state (matches the web repo) ────────────────────────────────
+.idea/
+.vscode/
+*.swp
+
 # ── Node / package managers ──────────────────────────────────────────────────
 node_modules/
 npm-debug.log*
@@ -19,6 +24,9 @@ pnpm-debug.log*
 .env
 .env.*
 !.env.example
+# Cloudflare Wrangler local vars (not used here, but kept in lockstep with the web repo)
+.dev.vars
+.dev.vars.*
 
 # Apple signing material — NEVER commit. (Team ID is fine; private keys/certs are not.)
 *.p12
@@ -27,6 +35,9 @@ pnpm-debug.log*
 *.certSigningRequest
 *.mobileprovision
 *.provisionprofile
+# Generic private keys / certs (defensive)
+*.key
+*.pem
 
 # ── Capacitor: generated web assets (copied from the jazzlore web repo) ──────
 # Each app's www/ is produced by `make <app>` (PWA dist) — regenerated, not source.
