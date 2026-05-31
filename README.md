@@ -1,9 +1,12 @@
 # Jazzlore iOS
 
-Native iOS wrappers for the offline-first [Jazzlore](https://jazzlore.com) PWAs — built to
-ship on the **App Store**. The web apps themselves live in the main monorepo at
-[github.com/winterized/jazzlore](https://github.com/winterized/jazzlore); this repo wraps
-their production builds as thin native shells using [Capacitor](https://capacitorjs.com).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Native iOS wrappers for the offline-first [Jazzlore](https://jazzlore.com) jazz reference apps —
+the distribution layer that ships them on the **App Store**. The apps themselves live in the
+public web monorepo at [github.com/winterized/jazzlore](https://github.com/winterized/jazzlore);
+this repo wraps their production builds as thin native shells using
+[Capacitor](https://capacitorjs.com).
 
 ## The pattern
 
@@ -11,29 +14,49 @@ Each app here is a **thin Capacitor shell** around an existing PWA:
 
 - The web build is **bundled into the app** (no live URL) — fully offline, identical to the
   installed PWA experience.
-- **No native UI, no extra capabilities/entitlements.** The only Capacitor plugin is
+- **No native UI, no extra capabilities or entitlements.** The only Capacitor plugin is
   `@capacitor/splash-screen` (for the branded launch/splash); otherwise the user sees the
   existing web UI full-screen, with the PWA's own safe-area handling.
 - Capacitor serves the bundled assets from `capacitor://localhost`, so the PWA runs exactly
   as it does on the web.
 
-## Monorepo layout
+## The apps
 
-Each app is its own Capacitor project (Capacitor 8, SPM, iOS 16 deployment target). The
-native `ios/` directory is committed and editable; generated artifacts (`www/`, build
-output, DerivedData) are ignored.
+Each app is its own Capacitor project. The native `ios/` directory is committed and editable;
+generated artifacts (`www/`, build output, `DerivedData`) are ignored.
 
-| Dir          | Bundle ID                 | Home-screen name | App Store name        | Status  |
-| ------------ | ------------------------- | ---------------- | --------------------- | ------- |
-| `metronome/` | `com.jazzlore.metronome`  | Jazz Metronome   | Jazzlore Metronome    | shipped |
-| `chords/`    | `com.jazzlore.chords`     | Jazz Chords      | Jazzlore Chords       | built   |
-| `scales/`    | `com.jazzlore.scales`     | Jazz Scales      | Jazzlore Scales       | built   |
+| Dir                        | Bundle ID                | Home-screen name | App Store name     | Status  |
+| -------------------------- | ------------------------ | ---------------- | ------------------ | ------- |
+| [`metronome/`](metronome/) | `com.jazzlore.metronome` | Jazz Metronome   | Jazzlore Metronome | shipped |
+| [`chords/`](chords/)       | `com.jazzlore.chords`    | Jazz Chords      | Jazzlore Chords    | built   |
+| [`scales/`](scales/)       | `com.jazzlore.scales`    | Jazz Scales      | Jazzlore Scales    | built   |
+
+**Metronome** is live on the App Store; **Chords** and **Scales** are built to the same pattern
+and pending submission. You can try the web versions any time at [jazzlore.com](https://jazzlore.com).
+
+## Architecture
+
+- **Capacitor 8**, with the iOS platform managed via **Swift Package Manager** (no CocoaPods).
+- **iOS 16+** deployment target.
+- A **monorepo with one app per top-level subdirectory** (`metronome/`, `chords/`, `scales/`),
+  each a self-contained Capacitor project with its own `package.json` and `ios/` tree.
+- A shared **root `Makefile`** orchestrates builds: each `make <app>` target pulls the
+  corresponding PWA's production build from the public web repo and syncs it into the shell.
+
+## Prerequisites
+
+- **Node 22+** and **pnpm** (the web repo is a pnpm workspace).
+- **Xcode 26+** with the iOS 16 SDK or later.
+- An **Apple Developer account** for code signing, if you intend to run on a device or submit to
+  the App Store. (The simulator needs no account.)
+- A local checkout of the web monorepo
+  [winterized/jazzlore](https://github.com/winterized/jazzlore) — defaults to
+  `~/Documents/jazzlore`; override with `JAZZLORE_WEB`.
 
 ## Building an app
 
-The web source lives in a **separate** repo. Point `JAZZLORE_WEB` at a local checkout of
-[winterized/jazzlore](https://github.com/winterized/jazzlore) (defaults to
-`~/Documents/jazzlore`), then run the per-app make target:
+The web source lives in a **separate** repo. Point `JAZZLORE_WEB` at a local checkout, then run
+the per-app make target:
 
 ```sh
 # Build a PWA, copy its dist into the Capacitor project, and sync iOS:
@@ -48,8 +71,8 @@ make scales JAZZLORE_WEB=/path/to/jazzlore
 cd scales && npx cap open ios
 ```
 
-`make <app>` runs `pnpm -F @jazzlore/<app> build` in the web repo, copies the resulting
-`dist/` into `<app>/www/`, and runs `npx cap sync ios`.
+`make <app>` runs `pnpm -F @jazzlore/<app> build` in the web repo, copies the resulting `dist/`
+into `<app>/www/`, and runs `npx cap sync ios`.
 
 ## Icons & splash
 
@@ -72,8 +95,23 @@ touched (the script prints the exact command on completion). The launch-screen b
 `ios/App/App/Base.lproj/LaunchScreen.storyboard` is `#0a0a0a` to match, and the splash is hidden
 on web-app mount via `@capacitor/splash-screen` (configured in each `capacitor.config.ts`).
 
-## Status
+## Contributing
 
-All three apps are bootstrapped to the same Capacitor pattern: **metronome** (the pilot,
-shipped), **chords**, and **scales**. Private for now; will be open-sourced (MIT) once the
-App Store submissions are settled.
+Free and **MIT-licensed** — issues and pull requests are welcome. This is primarily a personal
+portfolio project, so response times are best-effort, but bug reports and suggestions are
+appreciated.
+
+A couple of notes for forks:
+
+- The **bundle IDs** (`com.jazzlore.*`) and the App Store listings are reserved by the author.
+  If you fork this to build your own apps, change the bundle IDs in each `capacitor.config.ts`
+  and Xcode project to ones you own.
+- The committed Apple **Team ID** is public metadata, not a secret; replace it with your own for
+  signing.
+
+## License
+
+MIT © Aurélien Fontaine — see [LICENSE](LICENSE).
+
+This repository also vendors the **Geist** typeface (© Vercel, SIL Open Font License 1.1), used
+only at build time to render the splash wordmark. See [NOTICE.md](NOTICE.md).
