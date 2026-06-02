@@ -1,0 +1,18 @@
+{
+  "name": "jazzlore-musicians-ios",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Native iOS wrapper (Capacitor) for the Jazzlore Musicians PWA.",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/ios": "^8.3.4",
+    "@capacitor/share": "^8.0.0",
+    "@capacitor/splash-screen": "^8.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5"
+  }
+}
