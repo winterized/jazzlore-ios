@@ -30,9 +30,16 @@ generated artifacts (`www/`, build output, `DerivedData`) are ignored.
 | [`metronome/`](metronome/) | `com.jazzlore.metronome` | Jazz Metronome   | Jazzlore Metronome | shipped |
 | [`chords/`](chords/)       | `com.jazzlore.chords`    | Jazz Chords      | Jazzlore Chords    | built   |
 | [`scales/`](scales/)       | `com.jazzlore.scales`    | Jazz Scales      | Jazzlore Scales    | built   |
+| [`musicians/`](musicians/) | `com.jazzlore.musicians` | Jazz Musicians   | Jazzlore Musicians | built   |
 
-**Metronome** is live on the App Store; **Chords** and **Scales** are built to the same pattern
-and pending submission. You can try the web versions any time at [jazzlore.com](https://jazzlore.com).
+**Metronome** is live on the App Store; **Chords**, **Scales**, and **Musicians** are built to
+the same pattern and pending submission. You can try the web versions any time at
+[jazzlore.com](https://jazzlore.com).
+
+**Musicians** is the first app with a backend (a Cloudflare Worker BFF). Because the native
+shell serves from `capacitor://localhost` with no backend, it targets the absolute BFF origin
+when running native and enables `CapacitorHttp` (in its `capacitor.config.ts`) to bypass the
+WebView CORS — the other three apps are fully offline-bundled and need neither.
 
 ## Architecture
 
