@@ -18,7 +18,7 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const ROOT = resolve(import.meta.dirname, '..')
-const APPS = ['metronome', 'chords', 'scales']
+const APPS = ['metronome', 'chords', 'scales', 'musicians']
 const LAYERS = ['1-bg', '2-accents', '3-dot']
 const SIZE = 1024
 
@@ -37,7 +37,7 @@ async function main() {
       console.log(`  ${app}/${layer}.png`)
     }
   }
-  console.log('Done. 9 layer PNGs written.')
+  console.log(`Done. ${APPS.length * LAYERS.length} layer PNGs written.`)
 }
 
 await main()

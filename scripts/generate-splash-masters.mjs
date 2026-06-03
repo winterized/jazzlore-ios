@@ -39,7 +39,7 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const ROOT = resolve(import.meta.dirname, '..')
-const APPS = ['metronome', 'chords', 'scales']
+const APPS = ['metronome', 'chords', 'scales', 'musicians']
 
 // ---- Composition constants (master is a MASTER x MASTER square) ----
 const MASTER = 2732
@@ -140,12 +140,12 @@ async function main() {
       .toFile(out)
     console.log(`  ${app}/assets/splash-master.png`)
   }
-  console.log('Done. 3 splash masters written.')
+  console.log(`Done. ${APPS.length} splash masters written.`)
   console.log('')
   console.log('NOTE: this writes masters only. The shipped launch images live in each app\'s')
   console.log('Splash.imageset and are NOT updated here — regenerate them from the master, using')
   console.log('an isolated assetPath so the frozen AppIcon is never touched:')
-  console.log('  for app in metronome chords scales; do \\')
+  console.log('  for app in metronome chords scales musicians; do \\')
   console.log('    rm -rf $app/.splash-build && mkdir $app/.splash-build && \\')
   console.log('    cp $app/assets/splash-master.png $app/.splash-build/splash.png && \\')
   console.log('    (cd $app && npx capacitor-assets generate --ios --assetPath .splash-build \\')
