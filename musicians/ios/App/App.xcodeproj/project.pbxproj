@@ -19,10 +19,12 @@
 		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+		54F83E3BAD2C6C0D1839343B /* Portraits.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801A2FC59977AF7EA6C67A17 /* Portraits.xcassets */; };
 		5A42BD7BBB997D42D8452264 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF84EC5CFE895F52D298149 /* WidgetKit.framework */; };
 		72E637B26FD9AD2376790DF9 /* MusicianWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63718E66E3AA35E05BF4C11D /* MusicianWidget.swift */; };
 		9A63B4B24BAD4AAEAD5DF8F5 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = FB71AC0F62C64C7CA7DBDA89 /* AppIcon.icon */; };
 		9C535266128C6BB1FBDB93E5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A9DE1EEAE0D83F8EF8D2F3 /* SwiftUI.framework */; };
+		A21C7581ADC6ACFC01558709 /* musicians.json in Resources */ = {isa = PBXBuildFile; fileRef = 350CF05BDE51484FA643A62E /* musicians.json */; };
 		E858E20AA3E7FFEBAD97FE39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFD5B8CE553F7567CA19206 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 		135A4FF9091BD8CA411C49EF /* MusicianWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MusicianWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A9DE1EEAE0D83F8EF8D2F3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		350CF05BDE51484FA643A62E /* musicians.json */ = {isa = PBXFileReference; includeInIndex = 1; path = musicians.json; sourceTree = "<group>"; };
 		3AFD5B8CE553F7567CA19206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
 		504EC3041FED79650016851F /* Jazzlore Musicians.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jazzlore Musicians.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +69,7 @@
 		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		63718E66E3AA35E05BF4C11D /* MusicianWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicianWidget.swift; sourceTree = "<group>"; };
+		801A2FC59977AF7EA6C67A17 /* Portraits.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Portraits.xcassets; sourceTree = "<group>"; };
 		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
 		B94E9F758D1A63113EB88156 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0718804839585B6AE536D38 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D6BEBE75B3DE60F4117A64A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				350CF05BDE51484FA643A62E /* musicians.json */,
+				801A2FC59977AF7EA6C67A17 /* Portraits.xcassets */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		504EC2FB1FED79650016851F = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +163,7 @@
 				0CCF426BA005AECB442FC22C /* MusicianEntryView.swift */,
 				B94E9F758D1A63113EB88156 /* Info.plist */,
 				C0718804839585B6AE536D38 /* Assets.xcassets */,
+				2D6BEBE75B3DE60F4117A64A /* Resources */,
 			);
 			name = MusicianWidget;
 			path = MusicianWidget;
@@ -263,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1595E8DDE0303589F19124C4 /* Assets.xcassets in Resources */,
+				A21C7581ADC6ACFC01558709 /* musicians.json in Resources */,
+				54F83E3BAD2C6C0D1839343B /* Portraits.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
