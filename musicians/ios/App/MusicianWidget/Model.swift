@@ -80,4 +80,9 @@ enum WidgetContent {
         }
         return decoded
     }()
+
+    /// Stable, recognizable card for the widget gallery + loading state — the
+    /// curated flagship (Miles Davis), independent of today's rotation, so the
+    /// gallery always shows a polished representative.
+    static let preview: WidgetMusician = pool.first { $0.id == placeholder.id } ?? placeholder
 }

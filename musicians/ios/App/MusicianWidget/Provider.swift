@@ -12,12 +12,14 @@ struct MusicianEntry: TimelineEntry {
 struct Provider: TimelineProvider {
     static let scheduleDepthDays = 30
 
+    // Gallery + loading state show a stable representative (curated flagship),
+    // not today's rotation, so the gallery preview is always polished.
     func placeholder(in context: Context) -> MusicianEntry {
-        entry(for: Date())
+        MusicianEntry(date: Date(), musician: WidgetContent.preview)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (MusicianEntry) -> Void) {
-        completion(entry(for: Date()))
+        completion(MusicianEntry(date: Date(), musician: WidgetContent.preview))
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<MusicianEntry>) -> Void) {
