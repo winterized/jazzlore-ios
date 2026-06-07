@@ -1,0 +1,981 @@
+{
+  "generated_from": "widget-license-audit.md",
+  "decisions": {
+    "ccbysa_tap_attribution": "accepted",
+    "living": "excluded",
+    "non_jazz": "excluded",
+    "bobby_timmons": "excluded (no portrait in node)"
+  },
+  "count": 39,
+  "musicians": [
+    {
+      "id": "wikidata:Q311715",
+      "name": "Art Blakey",
+      "source": "curated",
+      "license": "CC0",
+      "lic_cat": "CC0",
+      "attribution": "Fotopersbureau De Boer",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Art_Blakey_and_the_Jazz_Messengers_in_the_Kurzaal_Concert_Hall_in_Den_Haag%2C_30.03.1963_-_10.jpg",
+      "birthYear": 1919,
+      "deathYear": 1990,
+      "primaryInstruments": [
+        "drum kit"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "2008 universal fire victim",
+        "afro-cuban jazz",
+        "afro-jazz",
+        "hard bop"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q208205",
+      "name": "Bill Evans",
+      "source": "curated",
+      "license": "CC BY-SA 3.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Brianmcmillen",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bill_Evans.jpg",
+      "birthYear": 1929,
+      "deathYear": 1980,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "modal jazz",
+        "cool jazz",
+        "post-bop",
+        "1950s",
+        "1960s",
+        "1970s",
+        "american",
+        "hard bop",
+        "jazz and blues",
+        "piano jazz",
+        "third stream",
+        "vocal jazz"
+      ],
+      "era": "Modal"
+    },
+    {
+      "id": "wikidata:Q110477",
+      "name": "Cannonball Adderley",
+      "source": "curated",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Unknown photographer",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Cannonball_Adderley_press_photo_1966.jpg",
+      "birthYear": 1928,
+      "deathYear": 1975,
+      "primaryInstruments": [
+        "alto saxophone",
+        "saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "hard bop",
+        "modal jazz",
+        "bebop",
+        "jazz fusion",
+        "jazz musicians",
+        "saxophonists",
+        "soul jazz"
+      ],
+      "era": "Hard bop"
+    },
+    {
+      "id": "wikidata:Q107432",
+      "name": "Charles Mingus",
+      "source": "curated",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Tom Marcello Webster, New York, USA",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Charles_Mingus_1976.jpg",
+      "birthYear": 1922,
+      "deathYear": 1979,
+      "primaryInstruments": [
+        "double bass",
+        "piano",
+        "trombone",
+        "cello"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "post-bop",
+        "gospel music",
+        "hard bop",
+        "free jazz",
+        "avant-garde jazz",
+        "orchestral jazz",
+        "2008 universal fire victim",
+        "american",
+        "bandleader",
+        "composer",
+        "double bassist",
+        "experimental big band",
+        "pianist",
+        "server name",
+        "soul jazz",
+        "third stream"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q7346",
+      "name": "John Coltrane",
+      "source": "curated",
+      "license": "CC0",
+      "lic_cat": "CC0",
+      "attribution": "Gelderen, Hugo van / Anefo",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/John_Coltrane_1963_cropped_ver2.jpg",
+      "birthYear": 1926,
+      "deathYear": 1967,
+      "primaryInstruments": [
+        "tenor saxophone",
+        "alto saxophone",
+        "saxophone",
+        "clarinet",
+        "baritone saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "modal jazz",
+        "free jazz",
+        "post-bop",
+        "hard bop",
+        "american",
+        "avant-garde jazz",
+        "instrumental jazz",
+        "saxophonist",
+        "spiritual jazz"
+      ],
+      "era": "Modal"
+    },
+    {
+      "id": "wikidata:Q353943",
+      "name": "John Lewis",
+      "source": "curated",
+      "license": "CC BY-SA 3.0 nl",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Bert Verhoeff for Anefo",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/John_Lewis_1977.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1920,
+      "deathYear": 2001,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "hard bop",
+        "jazz",
+        "bebop"
+      ],
+      "era": "Hard bop"
+    },
+    {
+      "id": "wikidata:Q93341",
+      "name": "Miles Davis",
+      "source": "curated",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "William P. Gottlieb",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Miles_Davis_%28Three_Deuces%2C_New_York%2C_N.Y._1947%29.jpg",
+      "birthYear": 1926,
+      "deathYear": 1991,
+      "primaryInstruments": [
+        "trumpet",
+        "flugelhorn",
+        "synthesizer",
+        "organ"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "cool jazz",
+        "hard bop",
+        "modal jazz",
+        "jazz fusion",
+        "classical",
+        "funk",
+        "jazz-funk",
+        "post-bop",
+        "rock"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q299208",
+      "name": "Sonny Rollins",
+      "source": "curated",
+      "license": "CC BY-SA 3.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Brianmcmillen at English Wikipedia",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/SonnyRollins.jpg",
+      "birthYear": 1930,
+      "deathYear": 2026,
+      "primaryInstruments": [
+        "tenor saxophone",
+        "soprano saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "post-bop",
+        "2008 universal fire victim",
+        "avant-garde jazz",
+        "bebop",
+        "hard bop",
+        "latin jazz"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q109612",
+      "name": "Thelonious Monk",
+      "source": "curated",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "William P. Gottlieb / Adam Cuerden",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Thelonious_Monk%2C_Minton%27s_Playhouse%2C_New_York%2C_N.Y.%2C_ca._Sept._1947_%28William_P._Gottlieb_06191%29.jpg",
+      "birthYear": 1917,
+      "deathYear": 1982,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "hard bop",
+        "stride piano",
+        "cool jazz",
+        "big band",
+        "post-bop",
+        "stride"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q317161",
+      "name": "Wayne Shorter",
+      "source": "curated",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Jean-Luc",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Weather_Report_%28Wayne_Shorter%29.jpg",
+      "birthYear": 1933,
+      "deathYear": 2023,
+      "primaryInstruments": [
+        "tenor saxophone",
+        "soprano saxophone",
+        "saxophone",
+        "alto saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "modal jazz",
+        "crossover",
+        "post-bop",
+        "jazz fusion",
+        "bebop",
+        "american",
+        "avant-garde jazz",
+        "crossover jazz",
+        "hard bop",
+        "jazz and blues",
+        "progressive jazz"
+      ],
+      "era": "Modal"
+    },
+    {
+      "id": "wikidata:Q298601",
+      "name": "Wes Montgomery",
+      "source": "curated",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Verve Records",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Wes_Montgomery.png",
+      "birthYear": 1923,
+      "deathYear": 1968,
+      "primaryInstruments": [
+        "guitar"
+      ],
+      "genres": [
+        "jazz",
+        "smooth jazz",
+        "jazz fusion",
+        "hard bop",
+        "2008 universal fire victim",
+        "big band",
+        "jazz pop",
+        "latin jazz",
+        "soul jazz"
+      ],
+      "era": "Fusion"
+    },
+    {
+      "id": "wikidata:Q570001",
+      "name": "Anthony Jackson",
+      "source": "polished",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Art Bromage from Seattle",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Anthony_Jackson.jpg",
+      "birthYear": 1952,
+      "deathYear": 2025,
+      "primaryInstruments": [
+        "bass guitar",
+        "electric bass"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "jazz fusion",
+        "rhythm and blues",
+        "funk",
+        "american",
+        "r&b",
+        "rnb",
+        "session"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q468202",
+      "name": "Art Pepper",
+      "source": "polished",
+      "license": "CC BY 2.0",
+      "lic_cat": "CC-BY",
+      "attribution": "The original uploader was Mind meal at English Wikipedia.",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Art_Pepper.jpg",
+      "birthYear": 1925,
+      "deathYear": 1982,
+      "primaryInstruments": [
+        "saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "american",
+        "bebop",
+        "bop",
+        "cool jazz",
+        "hard bop",
+        "mainstream jazz",
+        "post-bop",
+        "west coast jazz"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q109053",
+      "name": "Art Tatum",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "William P. Gottlieb",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Art_Tatum%2C_Vogue_Room_1948_%28Gottlieb%29.jpg",
+      "birthYear": 1909,
+      "deathYear": 1956,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "stride piano",
+        "american",
+        "pianist",
+        "stride",
+        "swing",
+        "virtuoso"
+      ],
+      "era": "Swing"
+    },
+    {
+      "id": "wikidata:Q312692",
+      "name": "Bud Powell",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Distributed by the Gale Agency in New York. Photographer uncredited and unknown.",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Bud_Powell_%281953_publicity_photo_-_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1924,
+      "deathYear": 1966,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "american",
+        "bebop",
+        "hard bop"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q233721",
+      "name": "Carla Bley",
+      "source": "polished",
+      "license": "CC BY 3.0",
+      "lic_cat": "CC-BY",
+      "attribution": "Dietmar Liste - http://www.jazzimage.de",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Carla_Bley_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1936,
+      "deathYear": 2023,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "avant-garde jazz",
+        "free jazz",
+        "jazz and blues",
+        "post-bop"
+      ],
+      "era": "Avant-garde"
+    },
+    {
+      "id": "wikidata:Q363908",
+      "name": "Cecil Taylor",
+      "source": "polished",
+      "license": "CC BY 3.0",
+      "lic_cat": "CC-BY",
+      "attribution": "nomo/michael hoefner \n\nhttp://www.zwo5.de",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Cecil_taylor_E5122329-2.jpg",
+      "birthYear": 1929,
+      "deathYear": 2018,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "avant-garde music",
+        "avant-garde jazz",
+        "experimental big band",
+        "free improvisation",
+        "free jazz",
+        "post-bop"
+      ],
+      "era": "Avant-garde"
+    },
+    {
+      "id": "wikidata:Q354883",
+      "name": "Earl Hines",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Unknown authorUnknown author or not provided",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/%22Earl_%60Father%27_%28Fatha%29_Hines%2C_a_great_swing_musician%2C_is_shown_with_Pvt._Charles_Carpenter%2C_former_manager_of_the_Hines_-_NARA_-_535834.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1903,
+      "deathYear": 1983,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "2008 universal fire victim",
+        "dixieland",
+        "stride",
+        "swing"
+      ],
+      "era": "Swing"
+    },
+    {
+      "id": "wikidata:Q357179",
+      "name": "Elvin Jones",
+      "source": "polished",
+      "license": "CC BY-SA 4.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Thomas Huther",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Elvin_Jones_1979_3.jpg",
+      "birthYear": 1927,
+      "deathYear": 2004,
+      "primaryInstruments": [
+        "drum kit"
+      ],
+      "genres": [
+        "jazz",
+        "post-bop",
+        "2008 universal fire victim",
+        "avant-garde jazz",
+        "chamber jazz",
+        "hard bop",
+        "jazz fusion"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q346762",
+      "name": "Freddie Hubbard",
+      "source": "polished",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Tom Marcello Webster, New York, USA",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Freddie_Hubbard_1976.jpg",
+      "birthYear": 1938,
+      "deathYear": 2008,
+      "primaryInstruments": [
+        "trumpet",
+        "flugelhorn"
+      ],
+      "genres": [
+        "jazz",
+        "2008 universal fire victim",
+        "bebop",
+        "cool jazz",
+        "fusion",
+        "hard bop",
+        "jazz and blues",
+        "jazz ballads",
+        "jazz fusion",
+        "jazz instrument",
+        "jazz-funk",
+        "post-bop",
+        "soul jazz",
+        "trumpet jazz"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q463678",
+      "name": "Grover Washington, Jr.",
+      "source": "polished",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Kingkongphoto &amp; www.celebrity-photos.com from Laurel  Maryland, USA",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Grover_Washington_1995.jpg",
+      "birthYear": 1943,
+      "deathYear": 1999,
+      "primaryInstruments": [
+        "saxophone",
+        "tenor saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "contemporary jazz",
+        "jazz fusion",
+        "jazz-funk",
+        "smooth jazz",
+        "smooth soul",
+        "soul jazz"
+      ],
+      "era": "Contemporary"
+    },
+    {
+      "id": "wikidata:Q1346401",
+      "name": "Jaki Byard",
+      "source": "polished",
+      "license": "CC BY-SA 4.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Brianmcmillen",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jaki_Byard_1979.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1922,
+      "deathYear": 1999,
+      "primaryInstruments": [
+        "piano",
+        "tenor saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "hard bop",
+        "free jazz",
+        "post-bop",
+        "stride"
+      ],
+      "era": "Hard bop"
+    },
+    {
+      "id": "wikidata:Q1233935",
+      "name": "James Booker",
+      "source": "polished",
+      "license": "CC BY-SA 3.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Lionel decoster",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/James_Booker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1939,
+      "deathYear": 1983,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "blues",
+        "boogie woogie",
+        "new orleans blues",
+        "new orleans r&b",
+        "piano blues",
+        "stride"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q506006",
+      "name": "Joe Henderson",
+      "source": "polished",
+      "license": "CC BY 2.0",
+      "lic_cat": "CC-BY",
+      "attribution": "Guy MacPherson",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Joe_Henderson_2.jpg",
+      "birthYear": 1937,
+      "deathYear": 2001,
+      "primaryInstruments": [
+        "tenor saxophone",
+        "saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "Latin jazz",
+        "avant-garde jazz",
+        "hard bop",
+        "jazz fusion",
+        "post-bop",
+        "spiritual jazz"
+      ],
+      "era": "Avant-garde"
+    },
+    {
+      "id": "wikidata:Q453393",
+      "name": "Lee Konitz",
+      "source": "polished",
+      "license": "CC BY-SA 4.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Schorle",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Lee_Konitz_Bad_Mergentheim.JPG",
+      "birthYear": 1927,
+      "deathYear": 2020,
+      "primaryInstruments": [
+        "alto saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "american saxophonist",
+        "death by covid-19",
+        "saxophonist"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q3829380",
+      "name": "Lee Morse",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Unknown authorUnknown author",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Leemorse_03.jpg",
+      "birthYear": 1897,
+      "deathYear": 1954,
+      "primaryInstruments": [
+        "guitar",
+        "voice"
+      ],
+      "genres": [
+        "jazz"
+      ],
+      "era": "Swing"
+    },
+    {
+      "id": "wikidata:Q347023",
+      "name": "Michael Brecker",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Sven.petersen",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Michael_Brecker_Munich_2001.JPG",
+      "birthYear": 1949,
+      "deathYear": 2007,
+      "primaryInstruments": [
+        "tenor saxophone",
+        "saxophone",
+        "EWI",
+        "flute"
+      ],
+      "genres": [
+        "jazz",
+        "post-bop",
+        "jazz fusion",
+        "contemporary jazz",
+        "hard bop",
+        "jazz and blues"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q2918931",
+      "name": "Michael Jones",
+      "source": "polished",
+      "license": "CC BY-SA 4.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Brian F Colgate",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Michael_Jones_portrait_by_V_Tony_Hauser.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1942,
+      "deathYear": 2022,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "new age music",
+        "canadian",
+        "chamber jazz",
+        "easy listening",
+        "jazz",
+        "keyboard/synthesizer/new age",
+        "meditation/relaxation",
+        "neo-classical",
+        "new age",
+        "piano/easy listening",
+        "piano/new age",
+        "solo instrumental"
+      ],
+      "era": "Contemporary"
+    },
+    {
+      "id": "wikidata:Q231942",
+      "name": "Natalie Cole",
+      "source": "polished",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "John Mathew Smith &amp; www.celebrity-photos.com from Laurel  Maryland, USA",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/NATALIE_COLE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1950,
+      "deathYear": 2015,
+      "primaryInstruments": [
+        "piano",
+        "voice"
+      ],
+      "genres": [
+        "pop music",
+        "soul",
+        "funk",
+        "jazz and blues",
+        "mezzo-soprano",
+        "pop",
+        "pop soul",
+        "quiet storm",
+        "r&b"
+      ],
+      "era": "Hard bop"
+    },
+    {
+      "id": "wikidata:Q520796",
+      "name": "Niels-Henning \u00d8rsted Pedersen",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Bj\u00f6rn Milcke",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/NH%C3%98P.jpg",
+      "birthYear": 1946,
+      "deathYear": 2005,
+      "primaryInstruments": [
+        "double bass",
+        "bass"
+      ],
+      "genres": [
+        "jazz",
+        "avant-garde jazz",
+        "hard bop",
+        "post-bop",
+        "third stream"
+      ],
+      "era": "Avant-garde"
+    },
+    {
+      "id": "wikidata:Q1765101",
+      "name": "Paul Weston",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Publicity still-Capitol Records.",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Paul_weston_capitol_1940s.jpg",
+      "birthYear": 1912,
+      "deathYear": 1996,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz"
+      ],
+      "era": "Swing"
+    },
+    {
+      "id": "wikidata:Q1936300",
+      "name": "Ramsey Lewis",
+      "source": "polished",
+      "license": "CC BY 2.0",
+      "lic_cat": "CC-BY",
+      "attribution": "Tomas Forgac Bratislava, Slovakia",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ramsey_Lewis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1935,
+      "deathYear": 2022,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "jazz fusion",
+        "jazz-funk",
+        "pop music",
+        "2008 universal fire victim",
+        "pop",
+        "soul jazz"
+      ],
+      "era": "Fusion"
+    },
+    {
+      "id": "wikidata:Q953019",
+      "name": "Ray Noble",
+      "source": "polished",
+      "license": "Public domain",
+      "lic_cat": "PD",
+      "attribution": "Unknown authorUnknown author",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Ray_Noble_1935bw.jpg",
+      "birthYear": 1903,
+      "deathYear": 1978,
+      "primaryInstruments": [],
+      "genres": [
+        "jazz"
+      ],
+      "era": "Swing"
+    },
+    {
+      "id": "wikidata:Q30587",
+      "name": "Stan Getz",
+      "source": "polished",
+      "license": "CC0",
+      "lic_cat": "CC0",
+      "attribution": "Geir",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Getz%26BakerSandvika1983a.jpg",
+      "birthYear": 1927,
+      "deathYear": 1991,
+      "primaryInstruments": [
+        "tenor saxophone",
+        "saxophone"
+      ],
+      "genres": [
+        "jazz",
+        "bebop",
+        "bop",
+        "bossa nova",
+        "cool jazz",
+        "jazz musicians",
+        "saxophonists"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q453604",
+      "name": "Tony Williams",
+      "source": "polished",
+      "license": "CC BY-SA 4.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Brianmcmillen",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tony_Williams1.jpg",
+      "birthYear": 1945,
+      "deathYear": 1997,
+      "primaryInstruments": [
+        "drum kit"
+      ],
+      "genres": [
+        "jazz",
+        "american",
+        "avant-garde jazz",
+        "hard bop",
+        "jazz fusion",
+        "jazz rock",
+        "post-bop"
+      ],
+      "era": "Avant-garde"
+    },
+    {
+      "id": "wikidata:Q365567",
+      "name": "Toots Thielemans",
+      "source": "polished",
+      "license": "CC BY 2.5",
+      "lic_cat": "CC-BY",
+      "attribution": "Ron van der Kolk",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Toots_thielemans.jpg",
+      "birthYear": 1922,
+      "deathYear": 2016,
+      "primaryInstruments": [
+        "guitar",
+        "chromatic harmonica"
+      ],
+      "genres": [
+        "jazz",
+        "composers",
+        "guitarists",
+        "harmonica players",
+        "jazz musicians",
+        "whistler"
+      ],
+      "era": "Bebop"
+    },
+    {
+      "id": "wikidata:Q935982",
+      "name": "Vagif Mustafazadeh",
+      "source": "polished",
+      "license": "CC BY-SA 4.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Eldar Mansurov",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Vaqif_Mustafazad%C9%99.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1940,
+      "deathYear": 1979,
+      "primaryInstruments": [
+        "piano"
+      ],
+      "genres": [
+        "jazz",
+        "mugham"
+      ],
+      "era": "Hard bop"
+    },
+    {
+      "id": "wikidata:Q539832",
+      "name": "Yusef Lateef",
+      "source": "polished",
+      "license": "CC BY-SA 2.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Tom Beetz",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Yusef_Lateef.jpg",
+      "birthYear": 1920,
+      "deathYear": 2013,
+      "primaryInstruments": [
+        "flute",
+        "oboe"
+      ],
+      "genres": [
+        "jazz",
+        "2008 universal fire victim",
+        "avant-garde jazz",
+        "hard bop",
+        "jazz fusion",
+        "jazz-funk",
+        "post-bop"
+      ],
+      "era": "Avant-garde"
+    },
+    {
+      "id": "wikidata:Q3575465",
+      "name": "Ziad Rahbani",
+      "source": "polished",
+      "license": "CC BY-SA 3.0",
+      "lic_cat": "CC-BY-SA",
+      "attribution": "Novalib2",
+      "portrait_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ziad_rahbani_2001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "birthYear": 1955,
+      "deathYear": 2025,
+      "primaryInstruments": [
+        "piano",
+        "voice"
+      ],
+      "genres": [
+        "composer",
+        "jazz",
+        "script-arab",
+        "songwriter"
+      ],
+      "era": "Modal"
+    }
+  ]
+}
