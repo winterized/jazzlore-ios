@@ -6,7 +6,6 @@ struct WidgetMusician: Codable, Identifiable, Hashable {
     let id: String
     let name: String
     let fact: String
-    let deepLinkPath: String
 
     /// Asset-catalog name for this musician's portrait. MUST stay identical to
     /// the generator's `assetName` rule (`id.replace(/[^A-Za-z0-9]/g, '_')`):
@@ -65,8 +64,7 @@ enum WidgetContent {
     static let placeholder = WidgetMusician(
         id: "wikidata:Q93341",
         name: "Miles Davis",
-        fact: "Reinvented jazz five times and never looked back.",
-        deepLinkPath: "/musicians/wikidata%3AQ93341"
+        fact: "Reinvented jazz five times and never looked back."
     )
 
     static let pool: [WidgetMusician] = {

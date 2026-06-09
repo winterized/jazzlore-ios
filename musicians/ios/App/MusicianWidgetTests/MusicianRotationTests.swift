@@ -12,7 +12,7 @@ final class MusicianRotationTests: XCTestCase {
 
     private func pool(_ n: Int) -> [WidgetMusician] {
         (0..<n).map {
-            WidgetMusician(id: "wikidata:Q\($0)", name: "M\($0)", fact: "f", deepLinkPath: "/musicians/x")
+            WidgetMusician(id: "wikidata:Q\($0)", name: "M\($0)", fact: "f")
         }
     }
 
@@ -85,7 +85,7 @@ final class MusicianRotationTests: XCTestCase {
             ("musicbrainz:abc-123", "musicbrainz_abc_123"),
         ]
         for (id, expected) in cases {
-            let m = WidgetMusician(id: id, name: "x", fact: "y", deepLinkPath: "z")
+            let m = WidgetMusician(id: id, name: "x", fact: "y")
             XCTAssertEqual(m.assetName, expected)
         }
     }
