@@ -5,7 +5,7 @@
 # project's web dir, and syncs the iOS native project.
 
 # Path to a local checkout of the web monorepo (github.com/winterized/jazzlore).
-JAZZLORE_WEB ?= $(HOME)/Documents/jazzlore
+JAZZLORE_WEB ?= $(HOME)/Developer/jazzlore
 
 .PHONY: metronome chords scales musicians
 

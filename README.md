@@ -58,12 +58,12 @@ WebView CORS — the other three apps are fully offline-bundled and need neither
   the App Store. (The simulator needs no account.)
 - A local checkout of the web monorepo
   [winterized/jazzlore](https://github.com/winterized/jazzlore) — defaults to
-  `~/Documents/jazzlore`; override with `JAZZLORE_WEB`.
+  `~/Developer/jazzlore`; override with `JAZZLORE_WEB`.
 
 ## Building an app
 
-The web source lives in a **separate** repo. Point `JAZZLORE_WEB` at a local checkout, then run
-the per-app make target:
+The web source lives in a **separate** repo. The per-app make target builds from the checkout at
+`~/Developer/jazzlore`; set `JAZZLORE_WEB` to build from another one:
 
 ```sh
 # Build a PWA, copy its dist into the Capacitor project, and sync iOS:

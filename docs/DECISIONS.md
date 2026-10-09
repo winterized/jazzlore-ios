@@ -84,3 +84,10 @@ Decision:
 - Review reports are kept in `.claude/reviews/` in the main checkout, git-ignored, and deleted after 30 days.
 Why: Runs are unattended, so the check before a merge must not depend on the implementing session's own account of its work, and an unresolved finding has to reach the owner.
 Source: docs/briefs/2026-10-09-record-review-policy.md.
+
+## 2026-10-09: Default web repository for make
+Decision:
+- `make <app>` builds from `$(HOME)/Developer/jazzlore` when `JAZZLORE_WEB` is not set.
+- The override keeps its name, `JAZZLORE_WEB`, on the command line or in the environment.
+Why: The old default, `~/Documents/jazzlore`, is synced by iCloud Drive, which copied conflict files such as `config 2.xml` into the web build and from there into this repository. Repositories now live in `~/Developer`, outside iCloud. Keeping the variable's name keeps existing commands working.
+Source: docs/briefs/2026-10-09-makefile-web-repo-default.md.
