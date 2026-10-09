@@ -91,3 +91,11 @@ Decision:
 - The override keeps its name, `JAZZLORE_WEB`, on the command line or in the environment.
 Why: The old default, `~/Documents/jazzlore`, is synced by iCloud Drive, which copied conflict files such as `config 2.xml` into the web build and from there into this repository. Repositories now live in `~/Developer`, outside iCloud. Keeping the variable's name keeps existing commands working.
 Source: docs/briefs/2026-10-09-makefile-web-repo-default.md.
+
+## 2026-10-10: Repository paths in docs and comments
+Decision:
+- Every tracked file that says where the web repository, this repository or JazzDBPopulator lives names the `~/Developer` location, older design documents included.
+- `docs/DECISIONS.md` and `docs/briefs/` keep the paths they were written with.
+- The icon-layer SVG header comments are written by hand; `scripts/generate-icon-layers.mjs` only reads the SVGs. Only the comments changed, so the layer PNGs were not regenerated.
+Why: The old `~/Documents` folders are being deleted, and a stale path helps nobody. Decisions and briefs are the record of what was true at the time.
+Source: docs/briefs/2026-10-10-fix-stale-repo-paths.md.
