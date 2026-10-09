@@ -51,7 +51,7 @@ one `git revert` away.
   (purple), scales dot `#6f8caa` (blue). Background `#0a0a0a`. Accent motifs (bar line /
   satellite dots / staff lines) unchanged.
 - **Do not touch the web monorepo.** This is now iOS-repo-only work. The flat PWA icon
-  pipeline (`~/Documents/jazzlore/scripts/generate-icons.mjs` and the master SVGs) is the
+  pipeline (`~/Developer/jazzlore/scripts/generate-icons.mjs` and the master SVGs) is the
   design source of truth and stays as-is. PWA icons are not regenerated.
 - **Do not change non-icon code** in any app.
 

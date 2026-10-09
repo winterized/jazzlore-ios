@@ -4,7 +4,7 @@
  * iOS-only. The flat PWA/icon pipeline lives in the web monorepo and is
  * unrelated. Source of truth for layer geometry/colors: each app's
  * assets/icon-layers/*.svg (a faithful, frozen derivation of the design
- * masters at ~/Documents/jazzlore/assets/icons/<app>/pwa-master.svg).
+ * masters at ~/Developer/jazzlore/assets/icons/<app>/pwa-master.svg).
  *
  * Per app, reads:  <app>/assets/icon-layers/{1-bg,2-accents,3-dot}.svg
  * Per app, writes: <app>/assets/icon-layers/{1-bg,2-accents,3-dot}.png  (1024x1024)

@@ -208,7 +208,7 @@ Skip (b) and (c) entirely. (b) adds network fragility for zero freshness benefit
 
 You already have everything the widget needs — including the broader "surprise" pool — it's just on the wrong side of the process boundary today. There are **two tiers** of source data:
 
-**Tier 1 — the 12 hand-curated core** (`~/Documents/jazzlore/apps/musicians/src/data/curated.ts`, `CURATED: CuratedPick[]`):
+**Tier 1 — the 12 hand-curated core** (`~/Developer/jazzlore/apps/musicians/src/data/curated.ts`, `CURATED: CuratedPick[]`):
 - `id` — canonical `wikidata:Q…` (e.g. Miles Davis = `wikidata:Q93341`)
 - `hook` — a **hand-written one-line editorial fact**, perfect for the widget ("Reinvented jazz five times and never looked back.")
 - Hydrated to live name/portrait/subtitle via `GET /api/musicians/curated` → `CuratedCard { id, name, hook, subtitle, photo, portrait }`.
@@ -487,7 +487,7 @@ musicians/ios/App/
     Info.plist
     MusicianWidget.entitlements         (empty in v1.1; App Group added in v1.2)
 
-# in the WEB monorepo (~/Documents/jazzlore), alongside scripts/generate-splash-masters.mjs:
+# in the WEB monorepo (~/Developer/jazzlore), alongside scripts/generate-splash-masters.mjs:
 scripts/generate-widget-content.mjs     pulls /api/musicians/curated, resizes, writes Resources/
 ```
 

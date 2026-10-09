@@ -2,7 +2,7 @@
   <!-- Layer 2 / accents (musicians): the constellation — 4 amber edges from
        Miles (centre) out to the quintet satellites, plus the 4 satellite nodes.
        Matte, flat. Canonical design:
-       ~/Documents/jazzlore/assets/icons/musicians/pwa-master.svg
+       ~/Developer/jazzlore/assets/icons/musicians/pwa-master.svg
        The inner ends meet at the centre and are covered by the brand dot
        (layer 3, drawn in front), exactly as in the master. -->
   <g stroke="#f4a233" stroke-width="8" stroke-linecap="round">
