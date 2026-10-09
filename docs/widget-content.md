@@ -16,10 +16,10 @@ that talks to the BFF (once, from a laptop — never at runtime).
 
 ## How to regenerate
 
-The generator lives in the **web monorepo** (`~/Documents/jazzlore`):
+The generator lives in the **web monorepo** (`~/Developer/jazzlore`):
 
 ```bash
-cd ~/Documents/jazzlore
+cd ~/Developer/jazzlore
 pnpm widget:content          # → scripts/generate-widget-content.mjs
 ```
 
