@@ -1,6 +1,3 @@
-# ── Tooling state (oh-my-claudecode, editor caches) ──────────────────────────
-.omc/
-
 # ── macOS ───────────────────────────────────────────────────────────────────
 .DS_Store
 .AppleDouble
@@ -66,3 +63,11 @@ build/
 # ── CocoaPods (not used today; defensive for any future app) ─────────────────
 # Pods/ is regenerated from the Podfile; Podfile.lock is kept (pins versions).
 */ios/App/Pods/
+
+# Claude Code task workflow
+.claude/worktrees/
+.claude/reviews/
+.claude/settings.local.json
+
+# scripts/test.sh output: per-checkout derived data and logs
+.build-cli/
