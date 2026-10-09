@@ -7,7 +7,7 @@ App Store wrappers for the offline-first Jazzlore PWAs: four thin Capacitor 8 sh
 - Build and run every test: `scripts/test.sh`
 - Narrower: `scripts/test.sh musicians` (any of metronome, chords, scales, musicians); options starting with `-` go to the Musicians test run, e.g. `scripts/test.sh musicians -only-testing:MusicianWidgetTests/MusicianRotationTests`. `scripts/build.sh [app…]` builds without testing (a warm build of all four takes a few seconds; the tests add about 15). Logs are in `.build-cli/`.
 - A fresh worktree needs no setup: `scripts/test.sh` runs `npm ci` per app and, when an app has no web bundle, builds against a placeholder one. Never commit `www/`, `ios/App/App/public/`, `capacitor.config.json` or `config.xml`.
-- The real web bundle, to run or archive an app: `make <app> JAZZLORE_WEB=~/Developer/jazzlore`, then `cd <app> && npx cap open ios`. It builds whatever the web repository has checked out.
+- The real web bundle, to run or archive an app: `make <app>`, then `cd <app> && npx cap open ios`. It builds from `~/Developer/jazzlore` (`JAZZLORE_WEB=<path>` picks another checkout), with whatever that repository has checked out.
 - Icon layers and splash masters: `npm ci` at the root, then `npm run icons:layers` or `npm run splash:masters`.
 
 ## Project memory

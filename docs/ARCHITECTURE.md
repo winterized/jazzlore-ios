@@ -21,7 +21,7 @@ Four iOS apps, each a thin Capacitor 8 shell around one of the Jazzlore PWAs (Me
   - A tap opens `jazzlore-musicians://musician/<id>`. The scheme is registered in the app's `Info.plist`; `@capacitor/app` hands it to the web app, which maps it to a route.
   - `MusicianWidgetTests` is a hostless XCTest bundle that compiles `Model.swift` directly. It is the only automated test in the repository.
 - **Root tooling**:
-  - `Makefile`: `make <app>` builds the PWA in the web repository (`pnpm -F @jazzlore/<app> build`), copies its `dist/` to `<app>/www/` and runs `npx cap sync ios`.
+  - `Makefile`: `make <app>` builds the PWA in the web repository (`~/Developer/jazzlore` unless `JAZZLORE_WEB` says otherwise; `pnpm -F @jazzlore/<app> build`), copies its `dist/` to `<app>/www/` and runs `npx cap sync ios`.
   - `scripts/generate-icon-layers.mjs` (`npm run icons:layers`): turns `<app>/assets/icon-layers/*.svg` into PNG layers for Icon Composer.
   - `scripts/generate-splash-masters.mjs` (`npm run splash:masters`): writes `<app>/assets/splash-master.png` (app mark plus a "jazzlore" wordmark rendered from the vendored Geist font).
   - `scripts/test.sh`: builds all four apps for the simulator and runs the widget tests.
